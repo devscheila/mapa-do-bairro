@@ -18,8 +18,7 @@ h1 {
 }
 #map {
   height: 90vh;
-  width: 80%;
-  float: right;
+  width: 100%;
 }
 aside {
   width: 20%;
@@ -27,7 +26,7 @@ aside {
   background-color: #fff;
   z-index: 1;
   position: absolute;
-  overflow-y: auto;
+  overflow-y: scroll;
   padding: 0 10px;
 }
 aside h2 {

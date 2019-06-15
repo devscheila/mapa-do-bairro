@@ -20,20 +20,20 @@ class Content extends Component {
   handleClick = (places) => {
     for (let i = 0; i < window.markers.length; i++) {
       if (places.venue.id === window.markers[i].title) {
-        let content = this.prepareContent(places);
-        window.infowindow.setContent(content);
-        window.infowindow.open(window.mapObject, window.markers[i]);
+        let content = this.infoPlaces(places)
+        window.infowindow.setContent(content)
+        window.infowindow.open(window.map, window.markers[i])
       }
     }
   }
 
-  prepareContent = (location) => {
+  infoPlaces = (place) => {
     return (
       <div>
         <h3>
-          Name: <a href="">${location.venue.name}</a>
+          <a href="#">${place.venue.name}</a>
         </h3>
-        <address>Address: ${location.venue.location.address}</address>
+        <address>${place.venue.location.address}</address>
       </div>
     )
   }
@@ -42,16 +42,16 @@ class Content extends Component {
     this.setState({ query })
     if (query) {
       this.setState({
-        locations: this.filterLocations(query, this.state.places)
+        places: this.filterPlaces(query, this.state.places)
       });
     } else {
-      this.setState({ locations: this.state.allPlaces })
+      this.setState({ places: this.state.allPlaces })
     }
   }
 
-  filterLocations = (query, locations) => {
+  filterPlaces = (query, places) => {
     return (
-      locations.filter(location => location.venue.name.toLowerCase().includes(query.toLowerCase()))
+      places.filter(place => place.venue.name.toLowerCase().includes(query.toLowerCase()))
     )
   }
 
@@ -59,14 +59,14 @@ class Content extends Component {
     return (
       <content>
         <List
-          locations={this.state.places}
+          places={this.state.places}
           showInfoContent={this.handleClick}
           queryString={this.state.query}
           handleChange={this.handleTextChange}
         />
         <Map
-          locations={this.state.places}
-          prepareContent={this.prepareContent}
+          places={this.state.places}
+          infoPlaces={this.infoPlaces}
         />
       </content>
     )

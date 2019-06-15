@@ -11,9 +11,10 @@ class App extends Component {
 
   initMap = () => {
     let map = new window.google.maps.Map(document.getElementById('map'), {
-      center: { lat: -27.5417837, lng: -48.4228786 },
-      zoom: 10
+      center: { lat: -27.4356509, lng: -48.4160069 },
+      zoom: 13
     })
+    window.map = map
   }
 
   loadScript = (url) => {
