@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 class Map extends Component {
-  
+
   markers = []
 
   addMarkers = (places) => {
@@ -14,17 +14,19 @@ class Map extends Component {
             lng: places[i].venue.location.lng
           },
           map: window.map,
-          title: places[i].venue.id
+          title: places[i].venue.id,
+          animation: window.google.maps.Animation.DROP
         })
 
         marker.addListener('click', () => {
           let content = this.props.infoPlaces(places[i])
           infowindow.setContent(content)
-          infowindow.open(window.map, marker)
+          infowindow.open(window.map, marker) 
         })
 
         this.markers.push(marker)
       }
+
       window.infowindow = infowindow
       window.markers = this.markers
     }

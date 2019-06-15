@@ -1,68 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Mapa do Bairro
 
-## Available Scripts
+Projeto criado como parte do Nanodegree Web Front-End Avançado da Udacity. Aplicativo integra a API do Google Maps e do Foursquare, para mostrar um mapa com uma lista de locais selecionados. O aplicativo disponibiliza um campo para busca de algum local específico, dentro os locais disponíveis. O projeto foi desenvolvido com react.
 
-In the project directory, you can run:
+### Instruções para baixar o projeto
 
-### `npm start`
+1. Faça o clone deste projeto com `git clone https://github.com/sstihler/mapa-do-bairro.git`.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+OU
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. Abra o navegador de sua preferência e acesse: `https://github.com/sstihler/mapa-do-bairro`;
+2. Localize o botão `Clone or download` no canto superior direito da tela;
+3. Clique no botão `Clone or download` e clique na opção `Download ZIP`;
+4. Escolha a pasta onde deseja salvar o arquivo em seu computador e confirme;
+5. Descompacte o arquivo em seu computador e siga os passos a seguir para visualizar o projeto.
 
-### `npm test`
+### Instruções para visualizar o projeto
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Acesse a pasta em que você descompactou o projeto no seu computador pelo terminal de comando.
+2. Instale as dependências do projeto digitando `npm install`. Aguarde a conclusão da instalação.
+3. Para inicializar o projeto digite `npm start` e aguarde. Uma nova janela do seu navegador, abrirá automaticamente exibindo o aplicativo. Caso isso não ocorra automaticamente, acesse o site no seu navegador em http://localhost:3000.
 
-### `npm run build`
+### Lista de dependências
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. HTML
+2. CSS
+3. JavaScript
+4. React

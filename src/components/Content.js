@@ -4,7 +4,7 @@ import List from './List'
 import * as PlacesAPI from '../api/Places'
 
 class Content extends Component {
-  
+
   state = {
     places: [],
     allPlaces: [],
@@ -28,15 +28,16 @@ class Content extends Component {
   }
 
   infoPlaces = (place) => {
-    return (
-      <div>
-        <h3>
-          <a href="#">${place.venue.name}</a>
-        </h3>
-        <address>${place.venue.location.address}</address>
-      </div>
-    )
-  }
+      return ( 
+        `<div class="infoWindow">
+          <h3>
+            ${place.venue.name}
+          </h3>
+          <address>${place.venue.location.address}</address>
+          <p>* Dados fornecidos por <a href="https://pt.foursquare.com/city-guide" title="Foursquare City Guide">Foursquare City Guide</a></p>
+        </div>`
+      )
+    }
 
   handleTextChange = (query) => {
     this.setState({ query })

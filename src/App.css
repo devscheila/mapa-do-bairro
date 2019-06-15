@@ -66,3 +66,7 @@ aside ul li h3 a {
 aside ul li address {
   font-size: 12px;
 }
+.infoWindow p {
+  font-size: 10px;
+  padding-top: 5px;
+}
