@@ -17,16 +17,20 @@ class Content extends Component {
     )
   }
 
+  // exibe no mapa os dados do local selecionado
   handleClick = (places) => {
     for (let i = 0; i < window.markers.length; i++) {
       if (places.venue.id === window.markers[i].title) {
         let content = this.infoPlaces(places)
         window.infowindow.setContent(content)
         window.infowindow.open(window.map, window.markers[i])
+        window.markers[i].setAnimation(window.google.maps.Animation.BOUNCE);
+        setTimeout(() => window.markers[i].setAnimation(null), 2100);
       }
     }
   }
 
+  // popup com dados do local selecionado na lista
   infoPlaces = (place) => {
       return ( 
         `<div class="infoWindow">
@@ -39,6 +43,7 @@ class Content extends Component {
       )
     }
 
+  // filtra dados da listagem
   handleTextChange = (query) => {
     this.setState({ query })
     if (query) {
@@ -56,6 +61,7 @@ class Content extends Component {
     )
   }
 
+  // renderização da lista de locais e do mapa
   render() {
     return (
       <content>

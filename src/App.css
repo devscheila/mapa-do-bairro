@@ -9,64 +9,87 @@
 html, body {
   height: 100%;
 }
-h1 {
-  font-size: 26px;
+header {
+  background-color: cornflowerblue;
   padding: 20px;
   text-align: center;
-  background-color: cornflowerblue;
   color: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header h1 {
+  font-size: 26px;
+  margin-left: 20px;
+}
+content {
+  display: flex;
 }
 #map {
   height: 90vh;
   width: 100%;
 }
-aside {
-  width: 20%;
+#list-places {
   height: 90vh;
-  background-color: #fff;
-  z-index: 1;
-  position: absolute;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 0 10px;
+  transition: all .4s;
+  padding: 0;
 }
-aside h2 {
+#list-places h2 {
   color: cornflowerblue;
-  padding: 20px 0;
   text-align: center;
+  font-size: 20px;
 }
-aside span {
+#list-places span {
   display: none;
 }
-aside input {
+#list-places input {
   border: 1px solid cornflowerblue;
   padding: 5px;
   width: 100%;
   margin-bottom: 20px;
 }
-aside ul {
+#list-places ul {
   list-style:  none;
 }
-aside ul li {
+#list-places ul li {
   border-left: 3px solid cornflowerblue;
   border-bottom: 1px solid cornflowerblue;
   padding: 5px;
   margin-bottom: 10px;
 }
-aside ul li:hover {
+#list-places ul li:hover {
   background-color: #eaeaea;
 }
-aside ul li h3 {
+#list-places ul li h3 {
   font-size: 14px; 
 }
-aside ul li h3 a {
+#list-places ul li h3 a {
   text-decoration: none;
   font-weight: normal;
   color: cornflowerblue;
 }
-aside ul li address {
+#list-places ul li address {
   font-size: 12px;
+}
+.infoWindow h3 {
+  font-size: 16px;
 }
 .infoWindow p {
   font-size: 10px;
   padding-top: 5px;
+}
+address {
+  margin: 0 !important;
+}
+.p-4 {
+  padding: 0.5rem !important;
+}
+.navbar {
+  padding: 0;
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(255,255,255,.8);
+  border-color: rgba(255,255,255,.8);
 }
