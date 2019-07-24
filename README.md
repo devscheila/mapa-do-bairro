@@ -22,13 +22,20 @@ OU
 
 O projeto possui um service worker visível apenas em modo de produção.
 Para executar o aplicativo no modo de produção, execute o comando abaixo na pasta local do projeto:
+
 `npm run build`
+
 Navegue até o diretorio `build` e execute o servidor localhost.
 Se você tiver o Python 2.x instalado, poderá executar o Python Simple Server:
+
 `python -m SimpleHTTPServer 8080`
+
 Para o Python 3.x:
+
 `python -m http.server 8080`
+
 Em ambos os casos, acesse `http://localhost:8080` em seu navegador.
+
 Você pode confirmar que o service worker está registrado através da guia Application do Dev Tools ou pela mensagem `No internet connection found. App is running in offline mode.` no console do navegador.
 
 ### Lista de dependências
