@@ -23,6 +23,7 @@ class App extends Component {
     script.src = url
     script.async = true
     script.defer = true
+    script.onerror = () => { alert(`Erro ao carregar o Mapa`) }
     index.parentNode.insertBefore(script, index)
   }
 

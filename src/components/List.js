@@ -14,11 +14,9 @@ const List = (props) => {
           <ul>
             {places.map(pin => (
               <li key={pin.venue.id}>
-                <h3>
-                  <a href="#" onClick={() => props.showInfoContent(pin)}>
-                    {pin.venue.name}
-                  </a>
-                </h3>
+                <button onClick={() => props.showInfoContent(pin)}>
+                  {pin.venue.name}
+                </button>
                 <address>{pin.venue.location.address}</address>
               </li>
             ))}

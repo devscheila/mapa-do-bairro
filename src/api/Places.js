@@ -15,5 +15,9 @@ return (
   fetch(`https://api.foursquare.com/v2/venues/explore?`+ new URLSearchParams(parameters))
       .then(resp => resp.json())
       .then(result => result.response.groups[0].items)
+      .catch(error => {
+        alert(`Erro na requisição dos locais: ${error}`)
+        return []
+      })
   )
 }

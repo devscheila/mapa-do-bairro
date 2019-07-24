@@ -62,13 +62,13 @@ content {
 #list-places ul li:hover {
   background-color: #eaeaea;
 }
-#list-places ul li h3 {
+#list-places ul li button {
   font-size: 14px; 
-}
-#list-places ul li h3 a {
-  text-decoration: none;
-  font-weight: normal;
   color: cornflowerblue;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 #list-places ul li address {
   font-size: 12px;
